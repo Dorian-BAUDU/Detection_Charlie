@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>Ou-est-Charlie-Cherche-au-musee.jpg</filename>
+	<path>D:\Users\doria\Documents\Travail\Ecole d'ingénieur\Ecole EFREI\M1\Big Data Machine Learning\Projet\Training_project\models\research\object_detection\images\test\Ou-est-Charlie-Cherche-au-musee.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1500</width>
+		<height>1086</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>charlie</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1452</xmin>
+			<ymin>711</ymin>
+			<xmax>1483</xmax>
+			<ymax>741</ymax>
+		</bndbox>
+	</object>
+</annotation>

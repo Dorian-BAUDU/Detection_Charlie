@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>19.jpg</filename>
+	<path>D:\Users\doria\Documents\Travail\Ecole d'ingénieur\Ecole EFREI\M1\Big Data Machine Learning\Projet\Training_project\models\research\object_detection\images\train\19.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>864</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>charlie</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>338</xmin>
+			<ymin>620</ymin>
+			<xmax>353</xmax>
+			<ymax>642</ymax>
+		</bndbox>
+	</object>
+</annotation>
