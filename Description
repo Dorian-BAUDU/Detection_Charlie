@@ -1,0 +1,8 @@
+Projet : Détection de Charlie
+
+Projet Big Data par BAUDU Dorian, CHAIBLAINE Mehdi et GRANON Virginie
+
+Ce projet s'appuis sur les travaux de Tensorflow : https://github.com/tensorflow/tensorflow.
+
+Ce projet vise à détecter Charlie (Waldo en anglais) sur une image en utilisant le machine learning avec la librairie Tensorflow et le modèle "efficientdet_d0_coco17_tpu-32".
+Images de test et d'entrainement trouver sur Internet ou photographier par le groupe.
