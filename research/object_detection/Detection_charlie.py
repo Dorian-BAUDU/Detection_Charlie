@@ -15,6 +15,7 @@ import tarfile
 import tensorflow as tf
 import zipfile
 import pathlib
+#import keras
 
 from collections import defaultdict
 from io import StringIO
@@ -60,7 +61,7 @@ print("\nLoading Label map")
 PATH_TO_LABELS = "D:/Users/doria/Documents/Travail/Ecole d'ingénieur/Ecole EFREI/M1/Big Data Machine Learning/Projet/Detection_Charlie/models/research/object_detection/images/labelmap.pbtxt"
 category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS, use_display_name=True)
 
-print("\n Defining path to test images")
+print("\nDefining path to test images")
 
 # If you want to test the code with your images, just add path to the images to the TEST_IMAGE_PATHS.
 PATH_TO_TEST_IMAGES_DIR = pathlib.Path("D:/Users/doria/Documents/Travail/Ecole d'ingénieur/Ecole EFREI/M1/Big Data Machine Learning/Projet/Detection_Charlie/models/research/object_detection/test_images")
@@ -72,6 +73,15 @@ print("\nLoading saved model")
 # model_name = 'ssd_mobilenet_v1_coco_2017_11_17'
 # detection_model = load_model(model_name)
 detection_model = tf.saved_model.load("D:/Users/doria/Documents/Travail/Ecole d'ingénieur/Ecole EFREI/M1/Big Data Machine Learning/Projet/Detection_Charlie/models/research/object_detection/inference_graph/saved_model")
+
+#print("\nConvertion")
+
+# converter = tf.lite.TFLiteConverter.from_saved_model("D:/Users/doria/Documents/Travail/Ecole d'ingénieur/Ecole EFREI/M1/Big Data Machine Learning/Projet/Detection_Charlie/models/research/object_detection/inference_graph/saved_model")
+# tflite_model = converter.convert()
+
+# # Save the model.
+# with open('model.tflite', 'wb') as f:
+#   f.write(tflite_model)
 
 print(detection_model.signatures['serving_default'].inputs)
 
